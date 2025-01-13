@@ -1,13 +1,13 @@
 import camelot
 
-
+#path of yout pdf directry
 tables = camelot.read_pdf('file:///C:/Users/Administrator/Downloads/foo.pdf')
 
 
 print(tables)
 
-# Export the first table to a CSV file
-tables[0].to_csv('foo.csv')  # or export it directly using tables.export()
+#converstion pdf to excel
+tables[0].to_csv('foo.csv')  
 
 # Optionally, inspect the DataFrame
 df = tables[0].df
